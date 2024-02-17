@@ -183,13 +183,30 @@ address {
 .hero-container {}
 
 .hero {
-    background-color: var(--NAVY-BLUE, #2E2F42);
+    /* background-color: var(--NAVY-BLUE, #2E2F42);
     max-width: 1440px;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 2.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    background-color: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office\ 2.jpg);
+        max-width: 1440px;
+        background-size: cover;
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    
+        padding-top: 188px;
+        padding-bottom: 188px;
+        margin: 0 auto;
 }
 
 .hero-title {
@@ -371,8 +388,6 @@ address {
 
 .team-icon-item {
     display: flex;
-
-
 }
 
 .team-icon-link {
@@ -383,6 +398,12 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: #404bbf;
 }
 
 .team-icon-icon {
@@ -485,6 +506,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     line-height: 1.5;
     letter-spacing: 0.02em;
     position: absolute;
+    padding: 40px 32px;
         top: 0;
         background: var(--IRIS, #4D5AE5);
         width: 100%;
@@ -583,7 +605,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .footer-soc-link:hover, .footer-soc-link:focus  {
-    background-color: #31d0aa;;
+    background-color: #31d0aa;
 }
 
 .footer-soc-icon {
