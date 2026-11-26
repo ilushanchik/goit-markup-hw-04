@@ -15,12 +15,12 @@
   column-gap: 24px;
 }
 
-.portfolio-list > li {
+.portfolio-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list > li:nth-child(n + 4) {
+.portfolio-item:nth-child(n + 4) {
   margin-top: 48px;
 }
 
@@ -30,7 +30,7 @@
   border-top: none;
 }
 
-.portfolio-list h3 {
+.portfolio-item-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -41,7 +41,7 @@
   margin-bottom: 8px;
 }
 
-.portfolio-info p {
+.portfolio-item-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -50,7 +50,7 @@
   color: #434455;
 }
 
-.portfolio-list > li:hover {
+.portfolio-item:hover {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -78,6 +78,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list > li:hover .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
